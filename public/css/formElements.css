@@ -1,0 +1,81 @@
+.label-class {
+    font-weight: bold;
+    font-size: 14px;
+    width: 25%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.marginal-class {
+    margin: 6px;
+    left: 40%;
+}
+
+
+.input-common-class {
+    width: 300px;
+    height: 25px;
+    border-radius: 5px;
+    padding:2px;
+    outline:none;
+    border:1px solid grey;
+}
+
+.superScript {
+    color: red;
+}
+
+.select-class select{
+    cursor: pointer;
+}
+
+.configured-data {
+    margin: 8px 0px 8px 0px;
+}
+
+
+.configure-button-class {
+    display: block;
+    border: 1px solid rgb(25, 172, 230);
+    color:rgb(48, 179, 231);
+    background-color: white;
+    width: 300px;
+    height:25px;
+    border-radius: 5px;
+    cursor:pointer;
+    outline:none;
+}
+
+.icon-cls {
+    display: inline-block;
+    background-color: blue;
+    color: black;
+    width:12px;
+    top: 1px;
+    position: relative;
+    border-radius: 25px;
+}
+
+.hide-class {
+    display: none;
+}
+
+.sub-input-class {
+    width: 145px;
+    margin-left: 5px;
+    display:inline-block;
+}
+
+.sub-label-class {
+    margin-left: 5px;
+    width: inherit;
+}
+
+table {
+    width: 300px;
+    margin: 8px 0px 8px 0px;
+}
+
+
+table td:nth-child(2) {
+    text-align: left;
+}

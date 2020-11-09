@@ -1,0 +1,58 @@
+body{
+    margin:0;
+}
+
+.left-sec {
+    background-color: rgb(169, 220, 252);
+    height: 92%;
+    width: 15%;
+}
+
+.middle-sec {
+    position: absolute;
+    float: right;
+    width:50%;
+    height: 92%;
+    overflow: auto;
+    padding: 20px;
+    margin-left: 30%;
+    top: 0;
+    left: 14%;
+    z-index: 5;
+}
+
+.bottom-sec {
+    height:7%;
+    background-color:rgb(47, 47, 110);
+    border-top: 6px rgb(23, 172, 231) solid;
+    position: absolute;
+    width:100%;
+}
+
+.bottom-button {
+    width:80px;
+    height: 30px;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: bold;
+    top: 20%;
+    position: relative;
+    cursor: pointer;
+    outline: none;
+    border: none;
+}
+
+.cancel-button {
+    background-color: lightgrey;
+    color: black;
+    float: left;
+    left: 20px;
+}
+
+.update-button {
+    background-color:rgb(23, 172, 231);
+    color: white;
+    float: right;
+    right: 20px;
+}
+

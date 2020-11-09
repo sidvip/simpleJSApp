@@ -1,0 +1,108 @@
+<html>
+
+<head>
+    <title>Assignment</title>
+    <link rel="stylesheet" href="./public/css/mainPage.css">
+    <link rel="stylesheet" href="./public/css/formElements.css">
+    <link rel="stylesheet" href="./public/css/modalWindow.css">
+</head>
+
+<body>
+    <div class="left-sec"></div>
+
+    <div class="middle-sec">
+
+        <div class="label-class marginal-class"><sup class="superScript">*</sup>Analytical Method ID</div>
+        <input class="input-common-class marginal-class" type="text">
+
+        <div class="label-class marginal-class"><sup class="superScript">*</sup>Target Residue Type</div>
+        <select class="input-common-class marginal-class select-class" onchange="handleDropdown(this)">
+            <option value="" style="visibility:hidden;"></option>
+            <option value="api">API</option>
+            <option value="clagent">Cleaning Agent</option>
+            <option value="bbud">Bioburden</option>
+            <option value="endo">Endotoxin</option>
+        </select>
+
+        <div id="select-data"></div>
+        <div class="conf-grp hide-class">
+            <button class='configure-button-class marginal-class swab' onclick='showConfiureModal(this)'>
+                <div class='add-swab'><img class='icon-cls' src="./public/icons/add.png">
+                Configure Swab Sampling Parameters</div>
+                <div class='remove-swab hide-class'  style='color:red;'>Remove Swab Sampling Parameters</div>
+            </button>
+            <button class='configure-button-class marginal-class rinse' onclick='showConfiureModal(this)'>
+                <div class='add-rinse'><img class='icon-cls' src="./public/icons/add.png">
+                Configure Rinse Sampling Parameters</div>
+                <div class='remove-rinse hide-class' style='color:red;'>Remove Rinse Sampling Parameters</div>
+            </button>
+        </div>
+
+        <div class="label-class marginal-class"><sup class="superScript">*</sup>Reason</div>
+        <input class="input-common-class marginal-class" type="text">
+    </div>
+
+    </div>
+
+    <div class="bottom-sec">
+        <button class="bottom-button cancel-button">Cancel</button>
+        <button class="bottom-button update-button">Update</button>
+    </div>
+
+
+    <div class='modal-main hide-class'>
+        <!-- <div class="modal-label"><sup class="superScript">*</sup>Method Used</div>
+        <input class="modal-input" type="text">
+
+        <table>
+            <tr>
+                <td><div class="modal-label" style='margin-left:0px;'><sup class="superScript">*</sup>Solvent Name</div></td>
+                <td><div class="modal-label" style='margin-left:0px;'><sup class="superScript">*</sup>Solvent Quantity (ml)</div></td>
+            </tr>
+            <tr>
+                <td><input class="modal-input" type="number" min="0" style="width:85%"></td>
+                <td><input class="modal-input" type="number" min="0" style="width:85%"></td>
+            </tr>
+        </table>
+
+        <div class="modal-label"><sup class="superScript">*</sup>Default Recovery (%)</div>
+        <input class="modal-input" type="text">
+
+        <button class='configure-modal-button' onclick='addMOC(this)' style="border: 1px solid skyblue;border-radius:5px;
+        margin:10px;width: 90%;">
+            <div class='add-rinse'><img class='icon-cls' src="./public/icons/add.png">
+            Add MOC
+        </button>
+
+        <div class="add-moc hide-class">
+
+            <div class="table-div">
+                <table id='entryTable'>
+                    <tr>
+                        <td><div class="modal-label" style='margin-left:0px;'><sup class="superScript">*</sup>Select MOC</div></td>
+                        <td><div class="modal-label" style='margin-left:0px;'><sup class="superScript">*</sup>Recovery (%)</div></td>
+                    </tr>
+                    <tr>
+                        <td><select class='modal-select'>
+                            <option value='sst'>Stainless Steel</option>
+                            <option value='sst'>Glass</option>
+                            <option value='sst'>Teflon</option>
+                            <option value='sst'>Plastic</option>
+                        </select></td>
+                        <td><input class="modal-input" type="number" min="0" style="width:50%"></td>
+                    </tr>
+
+                </table>
+            </div>
+            
+            <button class='configure-modal-button' onclick='addEntry(this)'>
+                <img class='icon-cls' src="./public/icons/add.png"> Add another 
+                <div style="color:black; display:inline-block; cursor:default;">or</div> Create a new MOC
+            </button>
+        </div> -->
+    </div>
+    <script src="./public/scripts/handleData.js"></script>
+    <script src='./public/scripts/swabAndRinse.js'></script>
+</body>
+
+</html>
