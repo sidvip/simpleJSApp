@@ -4,6 +4,9 @@
 
    It is an UI creation assignment problem. It is about how to create an UI from scratch on *Plain Javascript/CSS/HTML* without using framework like React or others. 
 
+## Navigate 
+   >> https://sidvip.github.io/simpleJSApp/
+
 ## How to Run?
 
 * Open the ```index.html``` in the browser.
